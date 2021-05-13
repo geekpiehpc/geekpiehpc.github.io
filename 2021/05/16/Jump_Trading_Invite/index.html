@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
 
-  <title>GeekPie HPC</title>
+  <title>Jump Trading Rafael Invite Talk</title>
 
   
 
@@ -26,9 +26,9 @@
 
 <!-- Open Graph data-->
 <meta property="og:type" content="blog">
-<meta property="og:title" content="GeekPie HPC">
+<meta property="og:title" content="Jump Trading 讲座介绍">
 <meta property="og:site_name" content="GeekPie HPC">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+<meta property="og:url" content="https://hpc.geekpie.club/2021/05/16/Jump_Trading_Invite/">
 <meta property="og:description" content="">
 
 
@@ -142,58 +142,32 @@
 </header>
 <!--========== END HEADER ==========-->
 
-		<section id="blog">
+		<section id="post">
+  <div class="content content-width">
+    <h1 class="post-title"> Jump Trading 讲座介绍</h1>
+    <p class="date"> Thu May 13 2021 19:21:17 GMT+0800 </p>
+    
+    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">GeekPie_HPC 讲座系列</a>! 未来我们将邀请各界科技人士来我校讲座， 敬请关注。</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>讲座介绍</h2>
 
-  
+本讲座旨在带领大家了解HPC在金融领域的应用。在<a href="https://www.youtube.com/watch?v=z4nCTdQlH8w">高频交易</a>中，拿到的主要数据是时序的Bid和Ask数据，一般为500ms就有一次feed，为TCP或UDP包。超算在拿到这个数据后，会把整一套逻辑放在FPGA上，对其进行少量的随机过程的建模和分析。这部分由Quantitative Researcher 完成。Linux Team 则负责维护FPGA code代码生成，维护数据科学家的测试和生产环境，做好足够的用户隔离等。在文件系统方面，由于是跨国公司，如何保证全世界的用户都能高速访问每秒数百GB的数据传入及清洗也是一个很大的问题。由于期货、现货、股票、ETF等市场是一个感性为主、理性为辅的杂糅体。在commit algorithm阶段，需要有一个盯盘的人，称为tradedesk，通过自己的经验查看algorithm的决定是否会盈利。
 
-  <div class="container">
-    <div class="content content-width row">
+剩下的核心竞争力来自对交易所API的掌握程度上。
+<img class="logo-img logo-img-main" src="broker.png" alt="Asentus Logo">
+上图为大连期货交易所的接收数据包简易流程图，来自Optiver官网，broker交换机后的交易所处理逻辑对外界不可知，我们的近端服务器位于大连期货交易所楼下的厕所里，与broker以最快的网线直连。而我们的数据处理程序跑在上海的公司服务器内，如何保证你发出的程序最快的到达交易所内部被接收是众所周知的难题。
 
-      
-      <div class="post-list-container col-md-8">
-        
-          
-            
-<div class="post first-post">
-  <h1><a href="/2020/08/08/hello-world/"> Hello World </a></h1>
-  <p class="date"> Sat Aug 08 2020 19:21:17 GMT+0800 </p>
-  
-  
-    <p> Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
+同时带领来自STEM学科的大家寻找不同的实习及未来就业方向，如投行<a href="https://zh.wikipedia.org/wiki/摩根大通">大</a><a href="https://zh.wikipedia.org/wiki/摩根士丹利">小</a>摩根 <a href="https://www.goldmansachs.com">高盛</a>、其他高频公司<a href="http://optiver.com">Optiver</a> <a href="https://www.janestreet.com">JaneStreet</a>和 <a href="https://www.janestreet.com">Citadel</a>、其他数据科学咨询公司<a href="https://www.cicc.com">中金</a>、<a href="https://www.bcg.com/about/about-bcg/overview">BCG</a>等。
 
-More info: Writing
-Run server1$ hexo server
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>讲者介绍</h3>
 
-More info: Server
-Generate static files1$ hexo generate
+讲者为Rafael Suarez， 2011年本科毕业于芝加哥大学物理系，毕业后在学校担任研究员和高性能系统维护人。主要研究方向是Amazon AWS云在物理学方向的应用，同时日常维护GlusterFS 和 ceph集群，主要使用的scheduler 为OpenPBS。2014年加入Jump Trading 后，主要从事Linux Admin和市场负责人的工作，维护高性能计算设备日常运行，涉及CPU的低延时传包，GPU的低延时计算以及Linux的日常维护，主要包括eBPF和Grafana的使用。他从芝加哥工作到伦敦，于2019年加入上海Team。
 
-More info: Generating
-Deploy to remote sites1$ hexo deploy
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Jump Trading 介绍</h3>
+<a href=https://www.jumptrading.com>Jump Trading</a> 是一家起源于芝加哥的高频交易公司，自从1602年阿姆斯特丹第一次市场交易出现以来，一直在寻找一套合理且快速反应自由市场流动性的撮合机制，可是20年前之前的市场还是口头开单交易，最多到接线员交易。在80年代上海有很多大户室，说的就是能在交易所开空调盯盘的10W元大户人家，芝加哥期货交易所（CME）则在Pod当中叫盘。可是自从自动化高频交易接入后，短线交易（CTA）以及利用纳秒级别的新闻NLP API的信息交易成为主流，同时跨大洋市场的内外盘套利也成为可能。可是高频交易在合理的监管下（没有spoofing等操作）并不是一个破坏市场的行为，虽说是赚了市场恐慌指数的红利，但维护了市场流动性，同时推动了<a href=https://www.wsj.com/articles/high-frequency-traders-push-closer-to-light-speed-with-cutting-edge-cables-11608028200 a>低延时IB卡</a>及Linux网络和内存系统和<a href=https://en.cppreference.com/w/cpp/memory/polymorphic_allocator>C++高速内存PMR</a>等技术进步。
 
-More info: Deployment
- </p>
-  
-  <p class="continue"><a href="/2020/08/08/hello-world/" class="btn">Continue reading...</a></p>
-</div>
 
-          
-          
-
-        
-        
-      
-
-      </div>
-      
-
-      
-      
-
-    </div>
   </div>
 </section>
-
 
 		
 
